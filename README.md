@@ -46,26 +46,20 @@ npm run dev
 
 ## Features
 
-- create learning trails
-- view learning trails
-- update learning trails
-- delete learning trails
-- add steps to learning trails
-- view steps in learning trails
-- update steps in learning trails
-- delete steps in learning trails
+- CRUD operations for learning trails
+- topic management
+- user authentication
 
 ## API Endpoints
 
-- `POST /api/trails` - Create a new learning trail.
-- `GET /api/trails` - Retrieve all learning trails.
-- `GET /api/trails/{trail_id}` - Retrieve a specific learning trail.
-- `PUT /api/trails/{trail_id}` - Update a learning trail.
-- `DELETE /api/trails/{trail_id}` - Delete a learning trail.
-- `POST /api/trails/{trail_id}/steps` - Add a new step to a learning trail.
-- `GET /api/trails/{trail_id}/steps` - Retrieve all steps in a learning trail.
-- `PUT /api/trails/{trail_id}/steps/{step_id}` - Update a step in a learning trail.
-- `DELETE /api/trails/{trail_id}/steps/{step_id}` - Delete a step in a learning trail.
+- `POST /api/trails` - Create a new learning trail
+- `GET /api/trails` - Get a list of all learning trails
+- `GET /api/trails/{trail_id}` - Get a learning trail by ID
+- `PUT /api/trails/{trail_id}` - Update a learning trail
+- `DELETE /api/trails/{trail_id}` - Delete a learning trail
+- `POST /api/trails/{trail_id}/topics` - Add a topic to a learning trail
+- `DELETE /api/trails/{trail_id}/topics/{topic}` - Remove a topic from a learning trail
+- `POST /api/login` - Authenticate a user
 
 ## License
 
