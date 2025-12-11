@@ -1,9 +1,11 @@
 from fastapi import FastAPI
-from dotenv import load_dotenv
-from app.routes import trails_router, steps_router
+from app import models, routes, auth
+from app.database import Base, engine
+from app.settings import settings
 
-load_dotenv()
+Base.metadata.create_all(engine)
+
 app = FastAPI()
 
-app.include_router(trails_router)
-app.include_router(steps_router)
+app.include_router(routes.router)
+app.include_router(auth.router)
