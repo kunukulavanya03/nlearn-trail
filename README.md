@@ -46,20 +46,18 @@ npm run dev
 
 ## Features
 
-- CRUD operations for learning trails
-- topic management
-- user authentication
+- trail CRUD
+- user registration and login
 
 ## API Endpoints
 
-- `POST /api/trails` - Create a new learning trail
-- `GET /api/trails` - Get a list of all learning trails
-- `GET /api/trails/{trail_id}` - Get a learning trail by ID
-- `PUT /api/trails/{trail_id}` - Update a learning trail
-- `DELETE /api/trails/{trail_id}` - Delete a learning trail
-- `POST /api/trails/{trail_id}/topics` - Add a topic to a learning trail
-- `DELETE /api/trails/{trail_id}/topics/{topic}` - Remove a topic from a learning trail
-- `POST /api/login` - Authenticate a user
+- `POST /api/register` - Register a new user.
+- `POST /api/login` - Login an existing user.
+- `GET /api/trails` - Get all trails.
+- `POST /api/trails` - Create a new trail.
+- `GET /api/trails/{trail_id}` - Get a trail by ID.
+- `PUT /api/trails/{trail_id}` - Update a trail.
+- `DELETE /api/trails/{trail_id}` - Delete a trail.
 
 ## License
 
